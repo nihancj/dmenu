@@ -4,10 +4,12 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static char font[] = "monospace:size=10";
+static char font[] =  "inconsolata:size=11:style=Regular";
 static const char *fonts[] = {
 	font,
-	"monospace:size=10",
+	"inconsolata:size=11:style=Regular",
+        "JoyPixels:size=10"
+//        "Symbola:size=10"
 };
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
@@ -24,6 +26,9 @@ static char *colors[SchemeLast][2] = {
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
+/* -h option; minimum height of a menu line */
+static unsigned int lineheight = 0;
+static unsigned int min_lineheight = 8;
 
 /*
  * Characters not considered part of a word while deleting words
@@ -36,9 +41,10 @@ static const char worddelimiters[] = " ";
  */
 ResourcePref resources[] = {
 	{ "font",        STRING, &font },
-	{ "normfgcolor", STRING, &normfgcolor },
-	{ "normbgcolor", STRING, &normbgcolor },
-	{ "selfgcolor",  STRING, &selfgcolor },
-	{ "selbgcolor",  STRING, &selbgcolor },
 	{ "prompt",      STRING, &prompt },
+#include "color-schemes/color_style-selected.h"
+//	{ "normfgcolor", STRING, &normfgcolor },
+//	{ "normbgcolor", STRING, &normbgcolor },
+//	{ "selfgcolor",  STRING, &selfgcolor },
+//	{ "selbgcolor",  STRING, &selbgcolor },
 };
