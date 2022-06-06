@@ -4,3 +4,4 @@
 		{ "color12",                STRING,  &selbgcolor },
 
 		{ "color15",                STRING,  &selfgcolor },
+		{ "color11",                STRING,  &highlightcolor },

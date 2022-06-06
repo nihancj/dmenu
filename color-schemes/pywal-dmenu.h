@@ -1,1 +1,0 @@
-/home/user/.cache/wal/colors-wal-dmenu.h

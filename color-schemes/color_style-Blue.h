@@ -1,5 +1,5 @@
 
-
+		{ "color3",		STRING,	&highlightcolor },
 		{ "color0",		STRING,	&normbgcolor },
 		{ "color4",		STRING,	&normfgcolor },
 		{ "color0",		STRING,	&selfgcolor },

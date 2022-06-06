@@ -20,10 +20,13 @@ static char normfgcolor[] = "#bbbbbb";
 static char normbgcolor[] = "#222222";
 static char selfgcolor[]  = "#eeeeee";
 static char selbgcolor[]  = "#005577";
+static char highlightcolor[]  = "#ffc978";
 static char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { normfgcolor, normbgcolor },
 	[SchemeSel]  = { selfgcolor,  selbgcolor  },
+	[SchemeSelHighlight] = { highlightcolor, selbgcolor },
+	[SchemeNormHighlight] = { highlightcolor, normbgcolor },
 	[SchemeOut]  = { "#000000",   "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
