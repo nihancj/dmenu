@@ -1,3 +1,9 @@
 dmenu
 stest
-*.o
+dmenu.o
+drw.o
+util.o
+stest.o
+*.orig
+*.rej
+config.h
